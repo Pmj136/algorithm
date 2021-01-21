@@ -14,7 +14,7 @@ public class Shell {
         while (h >= 1) {
             for (int i = h; i < arr.length; i++) {
                 for (int j = i; j >= h; j -= h) {
-                    if (arr[j] > arr[j - h]) break;
+                    if (arr[j] >= arr[j - h]) break;
                     int min = arr[j];
                     arr[j] = arr[j - h];
                     arr[j - h] = min;
